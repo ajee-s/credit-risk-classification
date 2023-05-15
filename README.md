@@ -3,8 +3,6 @@ Supervised Machine Learning
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
 * Explain the purpose of the analysis.
 * Explain what financial information the data was on, and what you needed to predict.
 * Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
@@ -27,8 +25,6 @@ Use the LogisticRegression classifier and the resampled data to fit the model an
 
 
 ## Results
-
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
@@ -61,10 +57,14 @@ Overall, the classification report indicates that the model is performing well f
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+*If you do not recommend any of the models, please justify your reasoning.
+
+Using resampled training data we were able to increase the Recall for for the label 1 (high-risk loans) and thus able to reduce the Loan risk.
+F1 score also increased for label 1. So model 2 does appear to be better than model 1.
+However the model's performance for class 1 is slightly lower than that for class 0, with a lower precision and F1-score.So there is still room for further improvement.
 
 
 
-If you do not recommend any of the models, please justify your reasoning.
 
 
 
